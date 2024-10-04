@@ -40,3 +40,13 @@ Example (which you don't need to understand yet - we'll cover this later in the 
 npm install --save express-session
 // In code file (e.g. app.js)
 const sessions = require('express-session');
+
+### Types of Errors
+Syntax Errors
+- Typo
+- miss-type
+- missing/extra character
+
+Runtime Errors
+
+Logical Errors
