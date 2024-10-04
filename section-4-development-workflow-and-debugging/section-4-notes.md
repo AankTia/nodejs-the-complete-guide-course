@@ -50,3 +50,30 @@ Syntax Errors
 Runtime Errors
 
 Logical Errors
+
+## Summary
+### npm
+- npm stands for "Node Package Manager" and it always you to manage your Node project and its dependencies.
+- You can initialize a project with npm init
+- npm scripts can be defined in the package.json to give you "shortcuts" to common tasks/commands
+
+### 3rd Party Packages
+- Node project typically don't just use core modules and custom code but also third-party packages.
+- You can install them via npm.
+- You can differentiate between production dependencies (--save), development dependencies (--save-dev) and global dependencies (-g)
+
+### Type od Errors
+- Syntax, runtime and logical errors can break your app.
+- Syntax and runtime errors throe (helpful) error message (with line numbers!).
+- Logical errors can be fixed with testing and the help of the debugger.
+
+### Debuging
+- Use VS Code Node debugger to step into your code and go through it step-by-setp.
+- Analyze variable values at runtime.
+- Look into (and manipulate) variables at runtime.
+- Set breakpoints cleaverly (i.e. respect the async/event-driven nature)
+
+## Useful resources
+More on debugging Node.js: https://nodejs.org/en/docs/guides/debugging-getting-started/
+
+Debugging Node in Visual Studio Code: https://code.visualstudio.com/docs/nodejs/nodejs-debugging
