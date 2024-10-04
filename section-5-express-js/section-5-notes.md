@@ -34,3 +34,4 @@ module.exports = path.dirname(require.main.filename);
 Quite straightforward :
 
 ## Styling Pages
+## Serving File Staticaly
