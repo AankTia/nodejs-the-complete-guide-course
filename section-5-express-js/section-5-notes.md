@@ -12,3 +12,6 @@ Sails.js
 npm install --save express
 
 ## Middleware
+
+## Parser Incoming request
+npm install --save body-parser
