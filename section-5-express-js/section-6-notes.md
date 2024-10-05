@@ -23,3 +23,6 @@ Use mnimal HTML and custom template language.
 <p>{{ name }</p>}
 
 Use normal HTML and custome template language.
+
+## Installing & Implementing Pug
+npm install --save ejs pug express-handlebars
