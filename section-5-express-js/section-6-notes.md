@@ -26,3 +26,8 @@ Use normal HTML and custome template language.
 
 ## Installing & Implementing Pug
 npm install --save ejs pug express-handlebars
+
+## Outout Dynamic Content
+
+## Official Pug Docs
+Want to learn more about Pug? Check out their official docs: https://pugjs.org/api/getting-started.html
