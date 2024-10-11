@@ -6,7 +6,7 @@
   <%- include('../includes/navigation.ejs') %>
 
   <main>
-    <% if (hasProducts) { %>
+    <% if (prods.length > 0) { %>
       <div class="grid">
         <% for (let product of prods) { %>
           <article class="card product-item">
@@ -31,4 +31,4 @@
     <% } %>
   </main>
 
-  <%- include('../includes/end.ejs') %>
+<%- include('../includes/end.ejs') %>
