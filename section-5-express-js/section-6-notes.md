@@ -31,3 +31,5 @@ npm install --save ejs pug express-handlebars
 
 ## Official Pug Docs
 Want to learn more about Pug? Check out their official docs: https://pugjs.org/api/getting-started.html
+
+## Adding a Layout
