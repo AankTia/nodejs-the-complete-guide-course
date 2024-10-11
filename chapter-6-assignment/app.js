@@ -1,14 +1,21 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const expessHbs = require('express-handlebars');
 
 const app = express();
 
 const users = [];
 
-app.set('view engine', 'pug');
+app.engine('hbs', expessHbs({
+  defaultLayout: 'main-layout',
+  extname: 'hbs'
+}));
+
+app.set('view engine', 'hbs');
+// app.set('view engine', 'pug');
 app.set('views', 'views');
 
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', (req, res, next) => {
   res.render('index', {
@@ -19,7 +26,8 @@ app.get('/', (req, res, next) => {
 app.get('/users', (req, res, next) => {
   res.render('users', {
     pageTitle: 'User',
-    users: users
+    users: users,
+    hasUsers: users.length > 0
   });
 });
 
