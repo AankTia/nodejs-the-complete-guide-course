@@ -42,10 +42,7 @@ module.exports = class Product {
     return db.execute('SELECT * FROM products');
   }
 
-  static findById(id, cb){
-    // getProductFromFile(products => {
-    //   const product = products.find(p => p.id === id);
-    //   cb(product);
-    // });
+  static findById(id, ){
+    return db.execute('SELECT * FROM products where products.id = ?', [id]);
   };
 }
