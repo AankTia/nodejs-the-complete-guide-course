@@ -39,3 +39,11 @@ NoSQL Characteristics
 - Data is typically merged / nested in a few collections
 - Both horizontal and vertical scalling is possible.
 - Great performance for mass read & write requests.
+
+## Setting up MySQL
+- From mysql.com
+- Download & Install My SQL Server Comunity Edition
+- Download & INstall My SQL Workbench Comunity
+
+## Connecting our App to the SQL Database
+npm install --save mysql2
