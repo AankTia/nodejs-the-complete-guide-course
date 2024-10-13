@@ -47,3 +47,8 @@ NoSQL Characteristics
 
 ## Connecting our App to the SQL Database
 npm install --save mysql2
+
+## Useful resource
+Learn more about MySQL/ SQL in General: https://www.w3schools.com/sql/
+
+Learn more about the Node MySQL Package: https://github.com/sidorares/node-mysql2
