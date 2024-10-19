@@ -20,6 +20,7 @@ app.set('views', 'views');
 
 const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
+const { title } = require('process');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -53,6 +54,21 @@ Order.belongsToMany(Product, { through: OrderItem });
 sequelize
   // .sync({force: true})
   .sync()
+  .then(result => {
+    return Product.findByPk(1);
+  })
+  .then(product => {
+    if (!product) {
+      return Product.create({
+        title: "Node.js Book",
+        price: 11.98,
+        imageUrl:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScuUZxmQdNoa_kLRgE6UL6mYQSV_oqXRfaNg&s",
+        description: "This is Node.js book",
+      });
+    }
+    return product;
+  })
   .then(result => {
     return User.findByPk(1);
   })
