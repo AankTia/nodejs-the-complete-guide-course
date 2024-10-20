@@ -1,0 +1,29 @@
+services:
+  mongo:
+    image: tiawidi/mongo:6.0.2
+    container_name: node-shop-mongo
+    tty: true
+    ports:
+        - 27020:27017
+    environment:
+      - TZ='Asia/Jakarta'
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=password
+      - MONGO_INITDB_DATABASE=admin
+    networks:
+      - dev-net
+    volumes:
+      - mongo:/data/db
+      - mongo:/data/configdb
+volumes:
+  mongo:
+    driver: local
+networks:
+  dev-net:
+    driver: bridge
+
+# mongosh -u admin -p password --authenticationDatabase admin
+
+# use node-shop
+
+# db.createUser({user: 'admin', pwd: 'password', roles: ['readWrite']})
