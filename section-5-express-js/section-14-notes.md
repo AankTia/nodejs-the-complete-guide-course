@@ -7,3 +7,6 @@ in a client side
 in a server side
 
 npm install --save express-session
+
+## Using MongoDB to Store Session
+npm install --save connect-mongodb-session
