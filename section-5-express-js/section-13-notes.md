@@ -10,3 +10,7 @@ A Object-Document Mapping Library
 
 ## Connecting to the MongoDB Server with Mongoose
 npm install --save mongoose
+
+Useful resource:
+
+Mongoose Official Docs: https://mongoosejs.com/docs/
