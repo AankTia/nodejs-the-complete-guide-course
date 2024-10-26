@@ -2,3 +2,6 @@
 ## What is Authentication?
 
 ## How is Authentication Implemented?
+
+## Encripting Password
+npm install --save bcryptjs
