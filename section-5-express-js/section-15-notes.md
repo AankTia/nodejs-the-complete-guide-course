@@ -1,12 +1,20 @@
 # Section 15: Adding Authentication
 ## What is Authentication?
+- Authentication means means that not every visitor of the page can view and interact with everything.
+- Authentication has to happen on the server-side and builds up on sessions.
+- You can protect routes by checking the (session-controlled) login status right before you access a controller action
+
+## Security & UX
+- Passwords should be stored in a hashed form
+- CSRF attacks are a real issue and you should terefore include CSRF protection in ANY application you build!
+- For a better user experienece, you can flash data/messages into the session which you then can diaplay in your views.
 
 ## How is Authentication Implemented?
 
-## Encripting Password
+### Encripting Password
 npm install --save bcryptjs
 
-## CSRF Attack
+### CSRF Attack
 Cross-Site Request Forgery
 
 npm install --save csurf
@@ -22,5 +30,11 @@ Please understand that support in this course currently still focuses on the csu
 
 And most importantly, the general principle explained in this course is package independent.
 
-## Show messages
+### Show messages
 npm install --save connect-flash
+
+## Useful resources:
+
+Bcrypt Official Docs: https://github.com/dcodeIO/bcrypt.js
+
+More on CSRF Attacks: https://www.acunetix.com/websitesecurity/csrf-attacks/
