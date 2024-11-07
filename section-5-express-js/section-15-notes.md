@@ -21,3 +21,6 @@ However, in practice you should now choose a different package (https://www.npmj
 Please understand that support in this course currently still focuses on the csurf API, as shown in the course videos and code snapshots.
 
 And most importantly, the general principle explained in this course is package independent.
+
+## Show messages
+npm install --save connect-flash
